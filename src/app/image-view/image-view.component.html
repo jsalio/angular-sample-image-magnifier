@@ -1,0 +1,19 @@
+<p>
+  image-view works!
+</p>
+<button (click)="setActive()">display bue box</button>
+<div class="row">
+  <div class="column" style="background-color:#aaa;">
+    <div id="img-zoom"></div>
+    <img id="image" alt="hello" title="hello" (mouseenter)="onEnter($event)" (mouseleave)="onExit($event)"
+      (mouseover)="onOver($event)" (mousemove)="onMove($event)" src="../../assets/Document_Mutual_Release.gif" />
+  </div>
+  <div class="column" style="background-color:#bbb;">
+    <div id="container" style="width: 400px; height: 276px; background-color: aqua;">
+    </div>
+  </div>
+</div>
+
+
+<!-- <img id="image" alt="hello" title="hello" (mouseenter)="onEnter($event)" (mouseleave)="onExit($event)"
+  (mouseover)="onOver($event)" (mousemove)="onMove($event)" src="../../assets/Document_Mutual_Release.gif" /> -->

@@ -1,0 +1,20 @@
+<p>
+  image-view works!
+</p>
+<button (click)="setActive()">display zoom box</button>
+<input [(ngModel)]="boxZoomSize" (change)="applyChanges()" />
+<div class="row">
+  <div class="column">
+    <div class="img-magnifier-container">
+      <div id="img-zoom" [ngStyle]="{'display': displayZoom ? 'block': 'none'}" class="img-magnifier-glass"
+        (mouseenter)="onEnter($event)" (mouseleave)="onExit($event)" (mousemove)="onMove($event)"></div>
+      <img id="image" alt="hello" title="hello" (mouseenter)="onEnter($event)" (mouseleave)="onExit($event)"
+        (mousemove)="onMove($event)" src="../../assets/Document_Mutual_Release.gif" />
+    </div>
+  </div>
+  <div class="column">
+    <div id="container" [ngStyle]="{'display': displayZoom ? 'block': 'none'}"
+      style="width: 550px; height: 276px; background-color: darkgray;">
+    </div>
+  </div>
+</div>
