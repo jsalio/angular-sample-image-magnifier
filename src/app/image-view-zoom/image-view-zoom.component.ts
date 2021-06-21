@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-image-view-tow',
-  templateUrl: './image-view-tow.component.html',
-  styleUrls: ['./image-view-tow.component.css']
+  selector: 'app-image-view-zoom',
+  templateUrl: './image-view-zoom.component.html',
+  styleUrls: ['./image-view-zoom.component.css']
 })
-export class ImageViewTowComponent implements OnInit {
+export class ImageViewZoomComponent implements OnInit {
   image: any;
   imageZoomView: any;
   imageZoomTracker: any

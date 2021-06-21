@@ -3,14 +3,12 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { ImageViewComponent } from './image-view/image-view.component';
-import { ImageViewTowComponent } from './image-view-tow/image-view-tow.component';
+import { ImageViewZoomComponent } from './image-view-zoom/image-view-zoom.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ImageViewComponent,
-    ImageViewTowComponent
+    ImageViewZoomComponent
   ],
   imports: [
     BrowserModule,
