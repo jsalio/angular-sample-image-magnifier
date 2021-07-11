@@ -54,6 +54,14 @@ export class ImageViewZoomComponent implements OnInit {
     this.imageZoomView.style.backgroundImage = "url('" + none + "')";
   }
 
+  openZoom = (e) => {
+    this.displayZoom = true
+  }
+
+  closeZoom = (e) => {
+    this.displayZoom = false
+  }
+
   onMove = (e) => {
     var pos, x, y;
     /* Prevent any other actions that may occur when moving over the image */

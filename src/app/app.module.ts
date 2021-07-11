@@ -4,11 +4,13 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { ImageViewZoomComponent } from './image-view-zoom/image-view-zoom.component';
+import { ImageVisorComponent } from './image-visor/image-visor.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ImageViewZoomComponent
+    ImageViewZoomComponent,
+    ImageVisorComponent
   ],
   imports: [
     BrowserModule,

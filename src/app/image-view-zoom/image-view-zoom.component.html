@@ -6,9 +6,11 @@
   <div class="column">
     <div class="img-magnifier-container">
       <div id="img-zoom" [ngStyle]="{'display': displayZoom ? 'block': 'none'}" class="img-magnifier-glass"
-        (mouseenter)="onEnter($event)" (mouseleave)="onExit($event)" (mousemove)="onMove($event)"></div>
+        (mouseenter)="onEnter($event)" (mouseleave)="onExit($event)" (mousemove)="onMove($event)"
+        (mousedown)="openZoom($event)" (mouseup)="closeZoom($event)"></div>
       <img id="image" alt="hello" title="hello" (mouseenter)="onEnter($event)" (mouseleave)="onExit($event)"
-        (mousemove)="onMove($event)" src="../../assets/Document_Mutual_Release.gif" />
+        (mousemove)="onMove($event)" src="../../assets/Document_Mutual_Release.gif" (mousedown)="openZoom($event)"
+        (mouseup)="closeZoom($event)" />
     </div>
   </div>
   <div class="column">
